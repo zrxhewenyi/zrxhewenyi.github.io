@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客 · 赵瑞翔</title>
+  <meta name="description" content="赵瑞翔的博客：具身智能、计算机视觉与强化学习方向的学习笔记与项目记录。">
+  <meta name="theme-color" content="#FAFBFC">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="blog">
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- 顶栏导航（吸顶，锚点指向主页区块） -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">赵瑞翔<span class="nav__brand-en">Ruixiang Zhao</span></a>
+      <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="主导航">
+        <a href="index.html#about">关于</a>
+        <a href="index.html#news">动态</a>
+        <a href="index.html#education">教育</a>
+        <a href="index.html#techstack">技术栈</a>
+        <a href="index.html#research">研究</a>
+        <a href="index.html#projects">项目</a>
+        <a href="index.html#honors">荣誉</a>
+        <a href="blog.html" class="is-active">博客</a>
+        <a href="index.html#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="page-head">
+        <h1 class="page-head__title">博客 <span class="section__title-en">Blog</span></h1>
+        <p class="page-head__sub">学习笔记与项目记录 · 由 Markdown 撰写，纯前端渲染</p>
+      </div>
+      <div class="grid grid--3" id="blog-list">
+        <!-- 由 js/blog.js 读取 posts/index.json 渲染全部文章 -->
+        <p class="blog-loading">正在加载文章…</p>
+      </div>
+      <p class="back-link-wrap"><a class="back-link" href="index.html">← 返回主页</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 赵瑞翔 · 由 HTML/CSS/JS 手工构建，托管于 GitHub Pages</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="回到顶部" hidden>
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/vendor/marked.min.js" defer></script>
+  <script src="js/vendor/purify.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/blog.js" defer></script>
+</body>
+</html>

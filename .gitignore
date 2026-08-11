@@ -1,0 +1,14 @@
+# 个人敏感文件，禁止入库
+*.pdf
+提示词.1.md
+要求.md
+
+# 本地开发工具与产物，不入库
+qa_test.py
+qa_reduced.py
+qa_blogreveal.py
+debug_home.py
+qa-shots/
+
+# AI 工具内部状态
+.reasonix/

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赵瑞翔 · 个人学术主页</title>
+  <meta name="description" content="赵瑞翔的个人学术主页：具身智能、计算机视觉与强化学习方向，华北电力大学（保定）数据科学与大数据技术。">
+  <meta name="theme-color" content="#FAFBFC">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- 顶栏导航（吸顶） -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#home">赵瑞翔<span class="nav__brand-en">Ruixiang Zhao</span></a>
+      <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="主导航">
+        <a href="#about" class="is-active">关于</a>
+        <a href="#news">动态</a>
+        <a href="#education">教育</a>
+        <a href="#techstack">技术栈</a>
+        <a href="#research">研究</a>
+        <a href="#projects">项目</a>
+        <a href="#honors">荣誉</a>
+        <a href="blog.html">博客</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero / 页首 -->
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="hero__eyebrow">个人学术主页 · Academic Homepage</p>
+          <h1 class="hero__name">赵瑞翔<span class="hero__name-en">Ruixiang Zhao</span></h1>
+          <dl class="hero__facts">
+            <div><dt>学校</dt><dd>华北电力大学（保定）· 数理系 · 数据科学与大数据技术</dd></div>
+            <div><dt>成绩</dt><dd>平均学分绩点 4.01 · 平均学分绩 90.12 · 专业排名 2/59</dd></div>
+            <div><dt>在读</dt><dd>2024.09 — 2028.06（预期）</dd></div>
+            <div><dt>邮箱</dt><dd><a href="mailto:220241100130@ncepu.edu.cn">220241100130@ncepu.edu.cn</a></dd></div>
+          </dl>
+          <ul class="hero__links" aria-label="外部链接">
+            <li><a href="mailto:220241100130@ncepu.edu.cn" aria-label="邮箱">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span>Email</span></a></li>
+            <li><a href="https://github.com/yourname" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.05.78 2.12v3.14c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span>GitHub</span></a></li>
+          </ul>
+        </div>
+        <div class="hero__side">
+          <div class="hero__avatar" role="img" aria-label="头像占位">
+            <span>PHOTO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About 自我描述 -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">自我描述 <span class="section__title-en">About</span></h2>
+        <div class="about">
+          <div class="about__text">
+            <p>我是赵瑞翔，<strong>华北电力大学（保定）</strong>数理系<strong>数据科学与大数据技术</strong>专业 2024 级本科生，平均学分绩点 4.01，专业排名 2/59，核心课程均在 90 分以上（C/C++ 程序设计 98、数学分析 98、概率论 99 等）。</p>
+            <p>我的研究兴趣聚焦<strong>具身智能</strong>——让机器人真正“看懂”世界并学会操作，同时以<strong>计算机视觉</strong>与<strong>强化学习</strong>作为视觉表征与策略决策的理论底座。这个方向吸引我的地方在于，它把视觉、决策与物理世界连成闭环：模型不仅要知道“是什么”，还要决定“怎么做”。</p>
+            <p>为此我自学完成 <strong>Stanford CS231n</strong> 计算机视觉全课程，基于 PyTorch 独立完成对比实验，并系统整理 <strong>ACT</strong> 等核心算法笔记开源至 GitHub；同时坚持强化学习的理论学习，作为策略学习的底座。</p>
+            <p>现阶段的目标是在具身智能方向继续深造，把“从仿真到真实”的每一步都做扎实。</p>
+          </div>
+          <dl class="about__stats" aria-label="数据亮点">
+            <div class="about__stat">
+              <dt>4.01</dt>
+              <dd>平均学分绩点</dd>
+            </div>
+            <div class="about__stat">
+              <dt>2/59</dt>
+              <dd>专业排名</dd>
+            </div>
+            <div class="about__stat">
+              <dt>129h</dt>
+              <dd>志愿服务时长</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- News 动态 -->
+    <section id="news" class="section">
+      <div class="container">
+        <h2 class="section__title">动态 <span class="section__title-en">News</span></h2>
+        <ol class="news">
+          <li class="news__item">
+            <time class="news__time" datetime="2026-05">2026.05</time>
+            <p class="news__text">开始具身智能方向系统学习，整理 ACT 等核心算法笔记并开源</p>
+          </li>
+          <li class="news__item">
+            <time class="news__time" datetime="2026-05">2026.05</time>
+            <p class="news__text">完成 MNIST 神经网络 vs ViT 数据增强策略对比研究</p>
+          </li>
+          <li class="news__item">
+            <time class="news__time" datetime="2026-05">2026.05</time>
+            <p class="news__text">完成开源组织 Git 协作专项培训</p>
+          </li>
+          <li class="news__item">
+            <time class="news__time" datetime="2024-09">2024.09</time>
+            <p class="news__text">入学华北电力大学 数据科学与大数据技术专业</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Education 教育经历 -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section__title">教育经历 <span class="section__title-en">Education</span></h2>
+        <div class="edu card">
+          <!-- 校徽图像格：替换为 images/logo.png（校徽图片） -->
+          <div class="edu__logo" role="img" aria-label="校徽占位">
+            <span>LOGO</span>
+          </div>
+          <div class="edu__body">
+            <div class="edu__head">
+              <h3 class="edu__school">华北电力大学（保定）· 数理系 · 数据科学与大数据技术</h3>
+              <p class="edu__meta">2024.09 – 2028.06（预期）· 绩点 4.01 · 均分 90.12 · 排名 2/59</p>
+            </div>
+            <ul class="edu__courses" aria-label="核心课程成绩">
+              <li>C/C++程序设计 98</li>
+              <li>数学分析(1) 98</li>
+              <li>离散数学 97</li>
+              <li>概率论 99</li>
+              <li>数据结构与算法 92</li>
+              <li>线性规划 95</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack 技术栈 -->
+    <section id="techstack" class="section">
+      <div class="container">
+        <h2 class="section__title">技术栈 <span class="section__title-en">Tech Stack</span></h2>
+        <div class="tech">
+          <div class="tech__group">
+            <h3 class="tech__group-title">语言 <span>Languages</span></h3>
+            <p class="tech__items">Python · C++</p>
+          </div>
+          <div class="tech__group">
+            <h3 class="tech__group-title">框架 <span>Frameworks</span></h3>
+            <p class="tech__items">PyTorch</p>
+          </div>
+          <div class="tech__group">
+            <h3 class="tech__group-title">工具 <span>Tools</span></h3>
+            <p class="tech__items">Git · Linux · Tmux · Docker</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research 研究方向 -->
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section__title">研究方向 <span class="section__title-en">Research</span></h2>
+        <div class="blocks">
+          <div class="block">
+            <h3 class="block__title">具身智能<span class="block__title-en">Embodied AI</span></h3>
+            <p class="block__text">机器人控制与操作策略学习，跟进 ACT 等核心算法，关注仿真到真实的落地。</p>
+          </div>
+          <div class="block">
+            <h3 class="block__title">计算机视觉<span class="block__title-en">Computer Vision</span></h3>
+            <p class="block__text">ViT 与视觉表征学习，完成 CS231n 系统学习与小样本对比实验。</p>
+          </div>
+          <div class="block">
+            <h3 class="block__title">强化学习<span class="block__title-en">Reinforcement Learning</span></h3>
+            <p class="block__text">序贯决策与控制基础，作为具身智能策略学习的理论底座。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects 项目 -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">项目 <span class="section__title-en">Projects</span></h2>
+        <div class="blocks">
+          <div class="block">
+            <h3 class="block__title">具身智能自主学习与开源实践</h3>
+            <p class="block__text">独立跟进领域前沿，整理 ACT 等核心算法的原理笔记与代码复现，开源至个人仓库。</p>
+            <p class="block__tags">具身智能 · ACT · 开源</p>
+          </div>
+          <div class="block">
+            <h3 class="block__title">MNIST 神经网络 vs ViT 数据增强对比研究</h3>
+            <p class="block__text">基于 PyTorch 构建三组对照数据集，系统对比传统神经网络与 ViT 在不同数据增强策略下的性能、收敛与鲁棒性。</p>
+            <p class="block__tags">PyTorch · ViT · 数据增强</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors 荣誉 -->
+    <section id="honors" class="section">
+      <div class="container">
+        <h2 class="section__title">荣誉奖项 <span class="section__title-en">Honors</span></h2>
+        <ul class="honors">
+          <li class="honors__item"><span class="honors__year">2026</span>中车杯 国家三等奖</li>
+          <li class="honors__item"><span class="honors__year">2026</span>全国大学生数学竞赛（数学类）省级二等奖</li>
+          <li class="honors__item"><span class="honors__year">2025</span>校级二等奖学金</li>
+          <li class="honors__item"><span class="honors__year">2025</span>校级三好学生</li>
+          <li class="honors__item"><span class="honors__year">2025</span>校级志愿服务先进个人（累计志愿时长 129 小时）</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Blog 博客入口 -->
+    <section id="blog-entry" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">博客 <span class="section__title-en">Blog</span></h2>
+          <a class="section__more" href="blog.html">全部文章 →</a>
+        </div>
+        <div class="grid grid--3" id="blog-cards">
+          <!-- 由 js/blog.js 读取 posts/index.json 渲染前 3 篇 -->
+          <p class="blog-loading">正在加载文章…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact 联系 -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title">联系方式 <span class="section__title-en">Contact</span></h2>
+        <div class="contact">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <a href="mailto:220241100130@ncepu.edu.cn">220241100130@ncepu.edu.cn</a>
+              <span class="contact__hint">主邮箱</span>
+            </li>
+            <li class="contact__item">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <a href="mailto:2529649711@qq.com">2529649711@qq.com</a>
+              <span class="contact__hint">备用邮箱</span>
+            </li>
+            <li class="contact__item">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.05.78 2.12v3.14c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/yourname</a>
+              <span class="contact__hint">GitHub</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 赵瑞翔 · 由 HTML/CSS/JS 手工构建，托管于 GitHub Pages</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="回到顶部" hidden>
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/blog.js" defer></script>
+</body>
+</html>

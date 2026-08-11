@@ -597,13 +597,13 @@ a, button {
   padding: 32px;
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 28px;
+  gap: 60px;
   align-items: start;
 }
 
 /* 校徽图像格（用户后续替换为 images/logo.png） */
 .edu__logo {
-  width: 120px;
+  width: 160px;
   height: 120px;
   display: flex;
   align-items: center;

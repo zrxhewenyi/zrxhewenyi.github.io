@@ -186,10 +186,9 @@ a, button {
   padding: 6px 12px;
   color: var(--color-text);
   border-radius: 4px;
-  /* 触控目标不小于 44px */
   min-height: 44px;
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: column !important;
   align-items: center;
   justify-content: center;
   line-height: 1.25;
@@ -206,12 +205,14 @@ a, button {
 
 /* 导航中文：偏大、加粗 */
 .nav__zh {
+  display: block !important;
   font-size: 1rem;
   font-weight: 700;
 }
 
 /* 导航英文：偏小、淡灰色 */
 .nav__en {
+  display: block !important;
   font-size: .65rem;
   font-weight: 400;
   color: var(--color-muted);

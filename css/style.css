@@ -257,7 +257,7 @@ a, button {
   display: grid;
   grid-template-columns: 1fr 220px;
   gap: 40px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .hero__eyebrow {
@@ -348,7 +348,7 @@ a, button {
 .hero__side {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 /* 头像占位（用户后续替换为 images/avatar.jpg） */
@@ -490,6 +490,15 @@ a, button {
   align-items: start;
 }
 
+/* 无侧栏模式：stats 已移至 hero，文字填满整行 */
+.about--full {
+  display: block;
+}
+
+.about--full .about__text {
+  max-width: 100%;
+}
+
 .about__text p {
   font-size: .98rem;
   line-height: 1.95;
@@ -502,6 +511,19 @@ a, button {
 
 .about__text strong {
   color: var(--color-accent);
+  font-weight: 700;
+}
+
+.about__text code {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: .92em;
+  background: rgba(27, 58, 92, .06);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.about__text strong code {
   font-weight: 600;
 }
 
@@ -513,7 +535,7 @@ a, button {
 }
 
 .about__stat {
-  padding: 16px 10px;
+  padding: 10px 8px;
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -530,15 +552,16 @@ a, button {
 .about__stat dt {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--color-primary);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .about__stat dd {
-  margin: 4px 0 0;
-  font-size: .78rem;
+  margin: 2px 0 0;
+  font-size: .75rem;
   color: var(--color-muted);
+  white-space: nowrap;
 }
 
 /* ---------- News 时间线 ---------- */
@@ -1210,4 +1233,54 @@ a, button {
     right: 16px;
     bottom: 16px;
   }
+}
+
+
+/* ==================== 修复 Hero 右侧及方块样式 ==================== */
+
+/* 1. 右侧照片与方块容器：垂直排列、右对齐 */
+.hero__side {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important; /* 核心：让照片和方块右边缘严格对齐 */
+}
+
+/* 2. 方块容器：与照片保持适度间距、横向排列、右对齐 */
+.hero__stats, .about__stats {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+  margin-top: 60px !important; /* 照片与方块适度留白，与左侧按钮水平对齐 */
+  justify-content: flex-end !important;
+  width: auto !important;
+}
+
+/* 3. 单个方块：变扁、变宽、取消高瘦限制 */
+.about__stat {
+  min-width: 110px !important;   /* 增加宽度，变成扁长形 */
+  width: auto !important;
+  height: auto !important;       /* 取消固定高度 */
+  aspect-ratio: auto !important; /* 取消长方形限制 */
+  padding: 8px 14px !important;  /* 减少上下内边距，变成扁框 */
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* 4. 方块内的文字：强制单行显示，绝不换行 */
+.about__stat dd {
+  white-space: nowrap !important; /* 解决"平均学分绩点"换行问题 */
+  font-size: 0.8rem !important;
+  margin-top: 4px !important;
+}
+
+/* 5. 修复底下自我描述：取消右侧留空，文字 100% 铺满整行 */
+.about {
+  display: block !important;
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+}
+
+.about__text {
+  max-width: 100% !important;
+  width: 100% !important;
 }

@@ -21,7 +21,7 @@
   --font-mono:    "JetBrains Mono", monospace;
 
   /* 布局常量 */
-  --container: 1080px;
+  --container: 1120px;
   --section-gap: 56px;
   --radius: 8px;
   --shadow-card: 0 1px 3px rgba(27, 58, 92, .08);
@@ -183,14 +183,16 @@ a, button {
 
 .nav__links a {
   position: relative;
-  padding: 10px 12px;
-  font-size: .92rem;
+  padding: 6px 12px;
   color: var(--color-text);
   border-radius: 4px;
   /* 触控目标不小于 44px */
   min-height: 44px;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  line-height: 1.25;
 }
 
 .nav__links a:hover {
@@ -200,7 +202,25 @@ a, button {
 
 .nav__links a.is-active {
   color: var(--color-primary);
-  font-weight: 600;
+}
+
+/* 导航中文：偏大、加粗 */
+.nav__zh {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* 导航英文：偏小、淡灰色 */
+.nav__en {
+  font-size: .65rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.nav__links a.is-active .nav__zh {
+  font-weight: 700;
 }
 
 /* 当前区块：底部 2px 砖红指示条 */
@@ -209,7 +229,7 @@ a, button {
   position: absolute;
   left: 12px;
   right: 12px;
-  bottom: 4px;
+  bottom: 2px;
   height: 2px;
   background: var(--color-accent);
 }
